@@ -1,96 +1,122 @@
-*{
-    box-sizing: border-box;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <h2>Customer response request</h2>
+         <h3>Get help placing an order.</h3>
+         <hr>
+         <form class="wrapper">
+            <div>
+                Name: 
+                    <br>
+                    <input type="text" name="Customer name" placeholder="Customer name*" required>
+                    <br>
+                Phone Number:
+                    <br>
+                    <input type="tel" name="Phone Number" placeholder="Phone Number*" required>
+                    <br>
+                Email:
+                    <br>
+                    <input type="email" name="Email" placeholder="Email*" required>
+                    <br>
+
+            </div>
+             <br>
+            <div>
+                Prefer contacted by:
+                    <br>
+                    <input type="radio" id="email" name="PreferedContacted" value="...">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="radio" id="phone" name="PreferedContacted" value="..."> 
+                    <label for="phone">Phone</label>
+            </div>
+
+            <h5>Additional information</h5>
+
+            <div>
+                Type of Purchase:
+                    <br>
+                    <input type="radio" id="Individual" name="PurchaseType">
+                    <label for="Individual">Individual</label>
+                    <br>
+                    <input type="radio" id="Business Use" name="PurchaseType">
+                    <label for="Business Use">Business Use</label>
+                    <br>
+                    
+            </div>
+                 <br>
+
+            <div>
+                Time frame of purchase:
+                    <br>
+                    <input type="radio" id="time_1" name="PurchaseTime">
+                    <label for="time_1">Less than 2 weeks</label>
+                    <br>
+                    <input type="radio" id="time_2" name="PurchaseTime">
+                    <label for="time_2">3-4 weeks</label>
+                    <br>
+                    <input type="radio" id="time_3" name="PurchaseTime">
+                    <label for="time_3">1-2 months</label>
+                    <br>
+                    <input type="radio" id="time_3" name="PurchaseTime">                                                  
+                    <label for="time_4">More than 3 months</label>
+                    <br>
+                    <input type="radio" id="time_4" name="PurchaseTime">
+                    <label for="time_5">More than 6 months</label>
+                    <br>
+                    <input type="radio" id="time_5" name="PurchaseTime">
+                    <label for="time_6">Not yet decided</label>
+                    <br> 
+            </div>
+                 <br>
+            <div>
+                Our products which  you liked the most.
+                <br>
+                    <div class="checkbox">
     
-}
-h2{
-    margin: 5px 0;
-}
-h3{
-    margin: 10px 0;
-}
-h5{
-    text-decoration: underline wavy;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: #F0F0F0;
-    font-size: large;
-    margin: 30px 30% 30px 30%;
-}
-.container{
-    background-color: #ffffff;
-    padding: 10px 20px 15px 20px;
-    border: 2px solid rgb(20, 31, 26);
-    border-radius: 10px;
-    box-shadow: 5px 8px #BEBEBE;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-select
-{
-    height: 35px;
-    width: 100%;
-    margin: 5px 5px 5px 10px;
-    border-style: solid;
-    border-radius: 8px;
-    background-color: #F5F5F5;
-    font-size: 20px;
-    text-indent: 10px;
-}
-.checkbox{
-    width: 120px;
-}
-
-.checkbox_input{
-    opacity: 0;
-    margin: 0px;
-}
-.checkbox_label{
-    display: inline-block;
-    width: 100%;
-    /* padding: 10px 20px; */
-    background: #F5F5F5;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    font-size: 18px;
-    color: #000000;
-    text-align: center;
-    transition: 0.2s ease;
-}
-.checkbox_label:hover{
-    background: #E0E0E0;
-    color: #000000;
-}
-.checkbox_input:checked + .checkbox_label{
-    background: linear-gradient(to bottom, #343436d0, #889296e4);
-    color: #ffffff;
-}
-
-
-
-textarea{
-    height: 80px;
-    width: 100%;
-    margin: 0 5px 0 11px;
-    border-radius: 8px;
-    overflow: auto;
-    resize: none;
-}
-
-input[type="submit"]{
-    margin: 15px 0 0 10px;
-    padding: 0px;
-    height: 30px;
-    width: 100px;
-    font-size: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.168);
-    border-radius: 4px;
-    background-color: #A9A9A9;
-}
-input[type="submit"]:hover{
-    background-color: #909090;
-    cursor: pointer;
-}
+                        <input type="checkbox" class="checkbox_input" id="laptops"  value="...">
+                        <label for="laptops" class="checkbox_label">Laptops</label>
+                    <br>
+                        <input type="checkbox" class="checkbox_input" id="monitors"  value="...">
+                        <label for="monitors" class="checkbox_label">Monitors</label>
+                    <br>    
+                        <input type="checkbox" class="checkbox_input" id="tablets"  value="...">
+                        <label for="tablets" class="checkbox_label">Tablets</label>
+                    <br>    
+                        <input type="checkbox" class="checkbox_input" id=" speakers"  value="...">
+                        <label for=" speakers" class="checkbox_label"> Speakers</label>
+                    <br>
+                    </div>
+            </div>
+                 <br>
+            <div>
+                    <label for="I am intrested in">I am intrested in:</label>
+                    <br>
+                    <select name="I am intrested in">
+                        <option value="Desktop">Desktop</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Monitors">Monitors</option>
+                        <option value="Workstation">Workstation</option>
+                        <option value="Tablets">Tablets</option>
+                        <option value="Other">Other</option>
+                    </select>
+                <br>
+            </div>
+                 <br>
+            <div>
+                Please indicate  the products you are intrested in. Comments, Enquries, Instructions:
+                <br>
+                <br>
+                 <textarea name="comment" placeholder="Feedback section !"></textarea>
+                 <br>
+            </div>
+            <input type="submit" value="Submit">
+            </form>
+    </div>
+</body>
+</html>
